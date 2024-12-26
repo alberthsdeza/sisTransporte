@@ -218,7 +218,7 @@ $("#modalRNT_actualizar_editar").click(function () {
                         formData.append("motivo", motivo);
                         $("#spinner-container").removeClass("d-none");
                         $.ajax({
-                            url: "../../controller/rnt.php?op=actualizar_rnt",
+                            url: "../../../controller/rnt.php?op=actualizar_rnt",
                             type: "POST",
                             data: formData,
                             processData: false,
@@ -272,3 +272,39 @@ function resetear_parsley_actualizar() {
     $("#sancion_uit_actualizar").parsley().reset();
     $("#puntos_actualizar").parsley().reset();
 }
+
+$("#switch_retencionlic_actualizar").change(function () {
+    // Verifica si el checkbox está marcado
+    if ($(this).is(":checked")) {
+        switch_retencionlic_actualizar.value = "S"; // Texto cuando el checkbox está marcado
+    } else {
+        switch_retencionlic_actualizar.value = "N"; // Texto cuando el checkbox no está marcado
+    }
+});
+
+$("#switch_descuento_actualizar").change(function () {
+    // Verifica si el checkbox está marcado
+    if ($(this).is(":checked")) {
+        switch_descuento_actualizar.value = "S"; // Texto cuando el checkbox está marcado
+    } else {
+        switch_descuento_actualizar.value = "N"; // Texto cuando el checkbox no está marcado
+    }
+});
+
+$("#switch_resp_solidaria_actualizar").change(function () {
+    // Verifica si el checkbox está marcado
+    if ($(this).is(":checked")) {
+        switch_resp_solidaria_actualizar.value = "S"; // Texto cuando el checkbox está marcado
+    } else {
+        switch_resp_solidaria_actualizar.value = "N"; // Texto cuando el checkbox no está marcado
+    }
+});
+
+$("#switch_dosaje_etilico_actualizar").change(function () {
+    // Verifica si el checkbox está marcado
+    if ($(this).is(":checked")) {
+        switch_dosaje_etilico_actualizar.value = "S"; // Texto cuando el checkbox está marcado
+    } else {
+        switch_dosaje_etilico_actualizar.value = "N"; // Texto cuando el checkbox no está marcado
+    }
+});

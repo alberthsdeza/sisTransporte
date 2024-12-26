@@ -1,5 +1,5 @@
 <?php
-require 'C:\laragon\www\sisTransporte1\vendor\autoload.php';
+require 'C:\laragon\www\sisTransporte\vendor\autoload.php';
 
 use Symfony\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\HttpClient\HttpClient;
