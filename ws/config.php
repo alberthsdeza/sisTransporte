@@ -4,7 +4,7 @@ class Connect extends PDO {
     private $port = '5432';
     private $dbname = 'db_sisgdvt';
     private $user = 'postgres';
-    private $password = 'alexis12';
+    private $password = '123456789';
 
     public function __construct() {
         $dsn = "pgsql:host={$this->host};port={$this->port};dbname={$this->dbname}";
