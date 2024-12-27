@@ -45,7 +45,7 @@ $menus = array(
               'icon' => 'fas fa-search',
               'label' => 'Por placa',
             ),
-          )
+          ),
         ),
         array(
           'url' => '#',
@@ -57,7 +57,7 @@ $menus = array(
               'icon' => 'fas fa-search',
               'label' => 'Papeleta y placa',
             ),
-          )
+          ),
         ),
         array(
           'header' => 'REPORTES',

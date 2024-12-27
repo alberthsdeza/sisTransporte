@@ -221,7 +221,7 @@ function configurarNumDoc(opcion) {
     document.getElementById("solnombre").setAttribute("required", "true");
     document.getElementById("razon_social").removeAttribute("required");
     solDomicilioCampo.className = "col-12 col-xl-9";
-  } else if (tipoDocumento === "2") {
+  } else if (tipoDocumento === "3") {
     inputDocumento.maxLength = 12;
     inputDocumento.pattern = "[a-zA-Z0-9]*";
     inputDocumento.placeholder =
@@ -237,7 +237,7 @@ function configurarNumDoc(opcion) {
     document.getElementById("solnombre").setAttribute("required", "true");
     document.getElementById("razon_social").removeAttribute("required");
     solDomicilioCampo.className = "col-12 col-xl-9";
-  } else if (tipoDocumento === "3" && opcion === "solidario") {
+  } else if (tipoDocumento === "5" && opcion === "solidario") {
     inputDocumento.maxLength = 11;
     inputDocumento.pattern = "[0-9]*";
     inputDocumento.placeholder = "RUC Solidario";
@@ -343,7 +343,7 @@ function limitabuscadoc(input, opcion) {
         $("#infdni").removeAttr("disabled");
       });
   }
-  if (tipoDocumento === "2" && valor.length >= 7) {
+  if (tipoDocumento === "3" && valor.length >= 7) {
     // Llamar a la función de búsqueda para el CE
     buscar_api_integrado("ce", valor)
       .then((data) => {
@@ -388,7 +388,7 @@ function limitabuscadoc(input, opcion) {
       });
   }
   if (
-    tipoDocumento === "3" &&
+    tipoDocumento === "5" &&
     valor.length === 11 &&
     /^[0-9]{11}$/.test(valor)
   ) {

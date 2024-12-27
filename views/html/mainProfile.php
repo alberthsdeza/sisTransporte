@@ -44,7 +44,7 @@
         </p>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <a href="/sisTransporte1/views/html/logout.php" class="dropdown-item">
+        <a href="/sisTransporte/views/html/logout.php" class="dropdown-item">
           <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
         </a>
       </div>

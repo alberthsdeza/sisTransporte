@@ -10,7 +10,7 @@ class Conectar
     protected function conexion()
     {
         try {
-            $conectar = $this->dbh = new PDO("pgsql:host=localhost;port=5432;dbname=dbsimcix", "postgres", "123456789");
+            $conectar = $this->dbh = new PDO("pgsql:host=10.10.10.16;port=5432;dbname=db_simcix", "postgres", "Mpch*2023*");
             return $conectar;
         } catch (Exception $e) {
             print "¡Error BD!: " . $e->getMessage() . "<br/>";
@@ -27,6 +27,6 @@ class Conectar
     public static function ruta()
     {
         //QA
-        return "http://192.168.12.10/sisTransporte/";
+        return "http://10.10.10.16/sisTransporte/";
     }
 }

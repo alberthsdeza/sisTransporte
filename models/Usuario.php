@@ -19,7 +19,7 @@ class Usuario extends Conectar
 
                 //comienzo API seguridad
                 $ch = curl_init();
-                $ws_seguridad = "http://192.168.12.10/sisSeguridad/ws/ws.php/?op=login&pers_dni=" . $dni_sitra . "&pers_contrasena=" . $pass_sitra . "&pers_ip=" . $ip . "&sist_inic=SITRA";
+                $ws_seguridad = "http://10.10.10.16/sisSeguridad/ws/ws.php/?op=login&pers_dni=" . $dni_sitra . "&pers_contrasena=" . $pass_sitra . "&pers_ip=" . $ip . "&sist_inic=SITRA";
 
                 curl_setopt($ch, CURLOPT_URL, $ws_seguridad);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -115,7 +115,7 @@ class Usuario extends Conectar
         $hiso_id_indi
     ) {
         $ch = curl_init();
-        $ws_seguridad = "http://192.168.12.10/sisSeguridad/ws/ws.php/?op=logout&hise_id=" . $hiso_id_indi;
+        $ws_seguridad = "http://10.10.10.16/sisSeguridad/ws/ws.php/?op=logout&hise_id=" . $hiso_id_indi;
 
         curl_setopt($ch, CURLOPT_URL, $ws_seguridad);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

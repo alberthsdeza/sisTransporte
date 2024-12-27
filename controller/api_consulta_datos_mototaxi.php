@@ -10,7 +10,7 @@ try {
         $estado = 1;
 
         // Configura la URL (sin parámetros)
-        $ws_url = "http://localhost/sisTransporte/ws/sistra_antiguo_mototaxi/consulta_datos.php";
+        $ws_url = "http://10.10.10.16/sisTransporte/ws/sistra_antiguo_mototaxi/consulta_datos.php";
 
         // Configura cURL para hacer la solicitud a la API externa
         $ch = curl_init();

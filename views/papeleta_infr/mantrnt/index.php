@@ -25,7 +25,7 @@ if (isset($_SESSION["usua_id"]) && verificarAccesoPorCarpeta($_SESSION["rol_id"]
   <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
       <?php require_once("../../html/menu.php"); ?>
-      <?php require_once("../../html/MainProfile.php"); ?>
+      <?php require_once("../../html/mainProfile.php"); ?>
       <div class="content-wrapper">
         <section class="content-header">
           <div class="container-fluid">
