@@ -51,7 +51,7 @@ if (isset($_SESSION["usua_id"]) && verificarAccesoPorCarpeta($_SESSION["rol_id"]
                     </div>
                   </div>
                   <div class="card-body">
-                    <table id="ul_registros_rnt" class="table table-bordered table-hover">
+                    <table id="ul_registros_rnt" class="table table-bordered table-hover" style="font-size: 15px;">
                       <thead class="thead-colored thead-dark">
                         <tr>
                           <th class="wd-5p">ID</th>
